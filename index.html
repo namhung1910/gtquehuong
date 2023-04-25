@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thái Bình News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body {
+        height: 100vh;
+        background-image: url('https://icdn.dantri.com.vn/zoom/1200_630/CnWngohd7OmCXXrgAyMG/Image/2014/02/canh-dong-8214-e119d.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {/*chỉnh màu các thành phần navbar*/
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    a:hover {/*chỉnh màu các thành phần của navbar khi di chuột vào*/
+        color: wheat;
+    }
+    /*HEADER*/
+    header {
+        position: relative;
+        padding: 0 2rem;
+    }
+    
+    .navbar{/* chỉnh độ dài chiều rộng,chiều cao trong navbar*/
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar .logo a {/*chỉnh cỡ chữ,độ đậm nhạt của logo*/
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .navbar .links {/*chỉnh khoảng cách các thành phần trong navbar*/
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .navbar .toggle_btn{
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .action_btn {
+        background-color: blue;
+        color:#fff;
+        padding: 0.5rem 1rem ;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+    }
+    
+    .action_btn:hover {
+        scale: 1.05;
+        color:white
+    
+    }
+    
+    .action_btn:active {
+        scale: 0.95;
+    }
+    header{ background-image: url('https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/15/1081201/Bien-Dong-Chau-Thai-.jpeg');
+            height: 120px;
+            background-size: cover;
+            background-position: center;
+}
+    header .navbar{padding: 50px 0 0 0;}
+    header .navbar .links a{
+        
+        font-weight:bolder ;
+    }
+    .tacgia a{
+        
+        font-weight:bolder ;
+    }
+    
+
+.thanhphanmot{
+    position: absolute;
+    top: 350px;
+    height: 100px;
+    width: 350px;
+    left: 100px;
+    background-image: url('https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/07_2019/thai_2.jpg');
+    background-size: cover;
+        background-position: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.thanhphanhai{
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    height: 100px;
+    width: 350px;
+    background-image: url('https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/07_2019/thai_4.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.thanhphanba{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    height: 100px;
+    width: 350px;
+    background-image: url('https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/07_2019/thai_8.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.modau p{position: absolute;
+top: 240px;
+padding: 0 0 50px 0;
+text-align: center;}
+.modau h1{
+    position: absolute;
+    top: 160px;
+text-align: center;}
+.thanhphanmot p{color:rgb(109, 6, 6);
+text-align: center;
+position: relative;
+top:40px;
+font-weight: bolder;}
+.thanhphanhai p{color:black;
+    text-align: center;
+    position: relative;
+    top:40px;
+    left:100px;
+    font-weight: bolder;}
+.thanhphanba a{color:rgb(255, 10, 255);
+    text-align: center;
+    left: 100px;
+    position: relative;
+    top:40px;
+    font-weight: bolder;}
+.chantrang {
+    position:absolute;
+    bottom:0;
+    padding-bottom: 0px;
+    color: white;
+    width:100%;
+    text-align: center;
+    height:60px;   
+    background:orange;
+ }
+</style>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="webthaibinh.html">THÁI BÌNH NEWS</a></div>
+            <ul class="links">
+                <li><a href="https://sovhttdl.thaibinh.gov.vn/tin-tuc/thai-binh-manh-dat-con-nguoi/lich-su-hinh-thanh-tinh-thai-binh.html">Lịch sử hình thành</a></li>
+                <li><a href="http://thaibinhtv.vn/news/16/41903/thai-binh-vung-dat-giau-truyen-thong-van-hoa-van-hien-yeu-nuoc-va-cach-mang">Văn Hóa&Xã Hội</a></li>
+                <li><a href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-check-in-thai-binh/162048">Du Lịch</a></li>
+                <li><a href="https://thaibinh.gov.vn/chinh-quyen/cac-huyen-thanh-pho"> Các địa phương</a></li>
+                <li><form action="/action_page.php">
+                    <input type="text" placeholder="Tìm kiếm.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+            <div class="tacgia">
+            <a href="thongtintacgia.html" >Thông tin tác giả</a>
+            </div>
+        </div>
+    </header>
+        <main>
+            <div class="modau">
+                <h1>Những điều thú vị làm nên quê hương Thái Bình</h1>
+                <p>Đất nước ta được thiên nhiên ban phát cho vô vàn những địa điểm du lich tuyệt đẹp đi vào trong mơ, có những nơi nổi tiếng với biển xanh cát trắng, có nơi thiên nhiên hùng vĩ mây mù giăng lối, nơi lại có những con kênh con ngạch quanh năm nước lũ…. Nhưng nếu bạn muốn tìm đến một địa điểm du lịch không cần quá nổi tiếng, không quá xô bồ khách du lịch thì điểm đến Thái Bình chính là sự lựa chọn tốt nhất. Không quá phát triển về du lịch như những địa điểm khác, thế nhưng nếu có dịp ghé thăm mảnh đất Thái Bình, bạn sẽ thực sự bị thu hút và có những trải nghiệm thú vị với quê hương Thái Bình.</p></div>
+
+            <div class="thanhphanmot">
+                
+                    
+                        <a href="canhdepthiennhienhuutinh.html" ><p>Cảnh đẹp thiên nhiên hữu tình</p></a> 
+                      
+            </div>
+            <div class="thanhphanhai">
+                
+                        <th><a href="nhungconnguoilamnenkitich.html">Những con người làm nên kỳ tích</a> </th>
+                      
+            </div>
+            <div class="thanhphanba">
+                
+                       
+                        <th><a href="amthucthaibinh.html">ẨM THỰC THÁI BÌNH</a> </th>
+                    
+                 
+            </div>
+        </main>
+    <footer>
+        <div class="chantrang">
+        <p>BẢN QUYỀN THUỘC VỀ NGUYỄN NAM HƯNG</p><BR>
+        <P>MÃ SV:1671020152</P>
+    </div>
+    </footer>
+</body>
+</html>

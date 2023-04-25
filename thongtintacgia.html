@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tác giả</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body {
+        height: 100vh;
+        background-image: url('https://vanhoadoisong.vn/wp-content/uploads/2022/05/100-hinh-nen-anh-canh-dong-lua-full-hd-cho-may-tinh-dien-thoai-11.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {/*chỉnh màu các thành phần navbar*/
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    a:hover {/*chỉnh màu các thành phần của navbar khi di chuột vào*/
+        color: wheat;
+    }
+    /*HEADER*/
+    header {
+        position: relative;
+        padding: 0 2rem;
+    }
+    
+    .navbar{/* chỉnh độ dài chiều rộng,chiều cao trong navbar*/
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar .logo a {/*chỉnh cỡ chữ,độ đậm nhạt của logo*/
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .navbar .links {/*chỉnh khoảng cách các thành phần trong navbar*/
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .navbar .toggle_btn{
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .action_btn {
+        background-color: blue;
+        color:#fff;
+        padding: 0.5rem 1rem ;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+    }
+    
+    .action_btn:hover {
+        scale: 1.05;
+        color:white
+    
+    }
+    
+    .action_btn:active {
+        scale: 0.95;
+    }
+    header{ background-image: url('https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/15/1081201/Bien-Dong-Chau-Thai-.jpeg');
+            height: 120px;
+            background-size: cover;
+            background-position: center;
+}
+    header .navbar{padding: 50px 0 0 0;}
+    header .navbar .links a{
+        
+        font-weight:bolder ;
+    }
+    .tacgia a{
+        
+        font-weight:bolder ;
+    }
+    .mainmain{
+        position: absolute;
+        padding:0;
+        text-align: center;
+        transform: translate(170%,0%);
+        width: 350px;
+        background: white;
+        border-radius: 10px;
+    }
+    .hoten{
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        width: 40%;
+        background: rgba(162, 176, 178, 0.438);
+        border-radius: 10px;
+    }
+    
+    i{padding-left: 20px;}
+    img{width: 100px;}
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="webthaibinh.html">THÁI BÌNH NEWS</a></div>
+            <ul class="links">
+                <li><a href="https://sovhttdl.thaibinh.gov.vn/tin-tuc/thai-binh-manh-dat-con-nguoi/lich-su-hinh-thanh-tinh-thai-binh.html">Lịch sử hình thành</a></li>
+                <li><a href="http://thaibinhtv.vn/news/16/41903/thai-binh-vung-dat-giau-truyen-thong-van-hoa-van-hien-yeu-nuoc-va-cach-mang">Văn Hóa&Xã Hội</a></li>
+                <li><a href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-check-in-thai-binh/162048">Du Lịch</a></li>
+                <li><a href="https://thaibinh.gov.vn/chinh-quyen/cac-huyen-thanh-pho"> Các địa phương</a></li>
+                <li><form action="/action_page.php">
+                    <input type="text" placeholder="Tìm kiếm.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+            <div class="tacgia">
+            <a >Thông tin tác giả</a>
+            </div>
+        </div>
+    </header>
+    <main>
+   <div class="mainmain">
+        <table  width="350px" height="100px">
+            <tr><td><h1>Thông tin cá nhân</h1></td></tr>
+        </table>
+   </div>
+        <div class="hoten">
+            <table border="1px" width="100%">
+                <tr height="100px">
+                    <td width="50px"><img src="imghehe.jpg"></td>
+                    <td>Họ và tên: Nguyễn Nam Hưng</td>
+                </tr>
+        </div>
+    <div class="sinhnhat">
+        <table border="1px" width="100%">
+            <tr height="100px">
+                <td width="50px"><i class="fa-solid fa-cake-candles"></i></td>
+                <td>Ngày Sinh:19/10/2004</td>
+            </tr>
+    </div>
+    <div class="school">
+        <table border="1px" width="100%">
+            <tr height="100px">
+                <td width="50px"><i class="fa-solid fa-school"></i></td>
+                <td>Trường học: Trường Đại học Đại Nam</td>
+            </tr>
+    </div>
+    <div class="nganhhoc">
+        <table border="1px" width="100%">
+            <tr height="100px">
+                <td width="50px"><i class="fa-solid fa-pen-nib"></i></td>
+                <td>Ngành Học: Công Nghệ thông tin</td>
+            </tr>
+    </div>
+    <div class="quequan">
+        <table border="1px" width="100%">
+            <tr height="100px">
+                <td width="50px"><i class="fa-solid fa-city"></i></td>
+                <td>Quê QUán: Thôn An Thái- xã Lê Lợi-huyện Kiến Xương-tỉnh Thái Bình</td>
+            </tr>
+    </div>
+    
+    </main>
+    <div class="ketnoi">
+        <table border="1px" height="100px" width="100%">
+            <tr>
+                <th><a href="Mailto:namhung1910@gmail.com"><i class="fa-solid fa-envelope"></i></a> </th>
+                
+                <th><a href="https://www.facebook.com/hungsouth7919"><i class="fa-brands fa-facebook"></i></a></th>
+            </tr>
+            <tr>
+               
+                
+                
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

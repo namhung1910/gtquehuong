@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body {
+        height: 100vh;
+       background-color: antiquewhite;
+        background-position: center;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {/*chỉnh màu các thành phần navbar*/
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    a:hover {/*chỉnh màu các thành phần của navbar khi di chuột vào*/
+        color: wheat;
+    }
+    /*HEADER*/
+    header {
+        position: relative;
+        padding: 0 2rem;
+    }
+    
+    .navbar{/* chỉnh độ dài chiều rộng,chiều cao trong navbar*/
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar .logo a {/*chỉnh cỡ chữ,độ đậm nhạt của logo*/
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .navbar .links {/*chỉnh khoảng cách các thành phần trong navbar*/
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .navbar .toggle_btn{
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .action_btn {
+        background-color: blue;
+        color:#fff;
+        padding: 0.5rem 1rem ;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+    }
+    
+    .action_btn:hover {
+        scale: 1.05;
+        color:white
+    
+    }
+    
+    .action_btn:active {
+        scale: 0.95;
+    }
+    header{ background-image: url('https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/15/1081201/Bien-Dong-Chau-Thai-.jpeg');
+            height: 120px;
+            background-size: cover;
+            background-position: center;
+}
+    header .navbar{padding: 50px 0 0 0;}
+    header .navbar .links a{
+        
+        font-weight:bolder ;
+    }
+    .tacgia a{
+        
+        font-weight:bolder ;
+    }
+    p{padding:50px;}
+    img{
+    position: relative;
+    left:25%;}
+    h1{ text-align: center;}
+    
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="webthaibinh.html">THÁI BÌNH NEWS</a></div>
+            <ul class="links">
+                <li><a href="https://sovhttdl.thaibinh.gov.vn/tin-tuc/thai-binh-manh-dat-con-nguoi/lich-su-hinh-thanh-tinh-thai-binh.html">Lịch sử hình thành</a></li>
+                <li><a href="http://thaibinhtv.vn/news/16/41903/thai-binh-vung-dat-giau-truyen-thong-van-hoa-van-hien-yeu-nuoc-va-cach-mang">Văn Hóa&Xã Hội</a></li>
+                <li><a href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-check-in-thai-binh/162048">Du Lịch</a></li>
+                <li><a href="https://thaibinh.gov.vn/chinh-quyen/cac-huyen-thanh-pho"> Các địa phương</a></li>
+                <li><form action="/action_page.php">
+                    <input type="text" placeholder="Tìm kiếm.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+            <div class="tacgia">
+            <a >Thông tin tác giả</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Cảnh đẹp thiên nhiên hữu tình</h1>
+        <p>Từ rất lâu người ta luôn gọi quê hương Thái Bình với cái tên là “ quê chị hai năm tấn”. Điều này hoàn đoàn đúng khi bạn ghé thăm nơi đây. Khi đến Thái Bình bán sẽ thấy đặc sản nơi đây chính là những cánh đồng lúa trải dài thẳng cánh cò bay. Năm tháng đi qua, quê hương Thái Bình tuy cũng chịu tác đọng của những bê tông sắt thép nhưng những cánh đồng lúa miên man vẫn luôn tồn tại và giữ được vẻ đẹp mà nó vốn có. Vào những ngày mùa, người nông dân tất bật trên những cánh đồng đi trước, cái cày theo sau, mùa lúa chín cả vùng thơm nhát và nhuộm vàng hết cả bầu trởi một vùng lúa chín. Với phong cảnh tuy đơn sơ, giản dị nhưng khiến cho những ai chứng kiến cũng bâng khuâng môt nỗi niềm nhớ quê hương.</p>
+        <img src="https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/07_2019/thai_3.jpg" width="400px"><br>
+        <p>Thế nhưng không phải vậy mà quê hương Thái Bình chỉ có lúa thôi nhé. Khi đến du lịch Thái Bình, bạn còn có thể ghé thăm những bãi biển nổi tiếng đấy. Bạn sẽ được ngâm mình trong những con sống biển hùng vĩ ở biển Cồn Vành, hay du lịch sinh thái nghỉ dưỡng tại khu du lịch Cồn Đen. Biển ở Thái Bình có một đặc điểm là những con song rất lớn nên rất phù hợp với những ai muốn trải nghiệm cảm giác mạnh.</p>
+    </main>
+
+</body>
+</html>
